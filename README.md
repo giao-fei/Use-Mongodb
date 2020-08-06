@@ -14,3 +14,5 @@
 七、查找giao数据库中giao表中的数据：db.giao.find()<br>
 八、替换giao 数据中giao表中的数据 db.giao.udpade({"name":"hello world","age":"1000"},{"name":"你好 世界",age:"500 "})<br>
 九、移除giao数据库中giao表的数据  db.giao.remove({"name":"你好 世界","age":"500"})
+十、数据包导出：mongodump -h dbhost(主机+端口号) -d dbname(数据库名称)  -o  dbdirectory(要导出的路径)
+十一、数据包导入： mongorestore -h dbhost -d dbname(数据库名称 名称可以随便取一个) <path>(数据包存放的路径)
